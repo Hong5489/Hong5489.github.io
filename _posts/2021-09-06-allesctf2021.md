@@ -5,14 +5,15 @@ subtitle: Writeups for ALLES CTF 2021
 tags: [ctf, writeups]
 comments: true
 ---
+# ccanary
 
 ## Description
 ```
 I'm using arch btw... ¯\_(ツ)_/¯
 ```
 ## Challenge files:
-- [ccanary](docs/ALLESCTF2021/ccanary)
-- [ccanary.c](docs/ALLESCTF2021/ccanary.c)
+- [ccanary](/uploads/ALLES2021/ccanary/ccanary)
+- [ccanary.c](/uploads/ALLES2021/ccanary/ccanary.c)
 
 Look at the source code, we can see that it got a **buffer overflow vulnerability** at the `quotegets` function:
 ```c
@@ -176,6 +177,7 @@ Here's the flag:
 ALLES!{th1s_m1ght_n0t_work_on_y0ur_syst3m_:^)}
 
 ```
+[Full script](/uploads/ALLES2021/ccanary/solve.py)
 
 ## Flag
 ```
