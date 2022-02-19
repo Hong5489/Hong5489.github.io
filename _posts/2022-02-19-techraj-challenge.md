@@ -46,7 +46,7 @@ LSB is stand for **Least Significant Bit** which is a common technique to hide a
 
 But what does the 5 numbers means? Clearly not in ASCII range
 
-At first I thought it was number of bits, but it was 0-8 so definitely not
+At first I thought it was number of bits used in LSB steg, but it was 0-8 so definitely not
 
 Whatever just tried running `zsteg` (Popular stego tool for PNG image)
 
@@ -58,7 +58,7 @@ imagedata           .. text: "EEE111)))"
 ```
 But nothing return 🙁, the image data is not LSB
 
-After that, I stucked for awhile.. tried many stego tools but didn't find anything.. The number must be something important
+After that, I stucked for awhile.. tried many stego tools but didn't find anything.. The numbers must be something important
 
 ## Hints
 
@@ -80,7 +80,7 @@ We need to extract each frames in the video and **extract the LSB value of the s
 
 ## Extract frame
 
-We can all frame from the video using `ffmpeg` command 
+We can extract all frame from the video using `ffmpeg` command 
 
 ```bash
 # Extract all frame named by frame number
@@ -128,9 +128,9 @@ python aesutil.py decrypt "KnJxqDY0D5zWgycuvxZdTKm2520qI2DRCItSMyJtdxA=" "testpa
 ```
 This is the biggest hint! 
 
-**Obviously the hash we got from the spectrogram is the key for this script! And now we just left finding the ciphertext to decrypt!**
+**Remember the hash we got from the spectrogram, is the key for this script! And now we just left finding the ciphertext to decrypt!**
 
-Where is the ciphertext? Quite obvious is at the LSB data from the specific frames!
+Where is the ciphertext? No other place must be the LSB data from the specific frames!
 
 The ciphertext should be in base64 form if not mistaken
 
@@ -215,7 +215,7 @@ print(cipher.decrypt(ciphertext))
 # MI4NLO+eBjkp67OyUvBeVPWc+gAwHNJwSkfkfqVaSeyj1LlKUGffUah27n7iesmQ/AD1DOd2yJ80HLVh09Fglve63Oh7LDXUEUpxJGULxWhx0caVI+BpdJL9lEgDyPkHOVw0k6Q38e7mAoltD2tnZcduEJx1jH+P/q5s8lKhiW9O1feyAfoJZedRv67As6/x26mXVCujVkG5CM0bk83vYQ==
 # b'Well done! Now get your 100$ before someone else claims it https://www.techraj156.com/qkazggrkf96qq4y (password:5nTfzhehLagigjx)\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10'
 ```
-Yeah!! Solved after 3 days of struggling! 
+Finally got the link! Yeah!! Solved after 3 days of struggling! 
 
 ## Decrypted Message
 ```
@@ -224,4 +224,4 @@ Well done! Now get your 100$ before someone else claims it https://www.techraj15
 
 ## Conclusion
 
-It was a fun challenge but I think its abit guessy, if without the hints I think maybe I will not got the solution. Anyway thanks again to Tech Raj for the building the challenge and the gift!
+It was a fun challenge but I think its abit guessy, if without the hints I think maybe I will not able to solve it. Anyway thanks again to Tech Raj for the building the challenge and the gift!
