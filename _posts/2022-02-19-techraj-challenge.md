@@ -76,7 +76,7 @@ Next I saw in discord, he gave hints in his instragram story:
 
 Then I suddently understand what the LSB string means! 
 
-We need to extract each frames in the video and **extract the LSB value of the specific frame number!**
+We need to extract each frames in the video and **extract the LSB value from the specific frame number!**
 
 ## Extract frame
 
