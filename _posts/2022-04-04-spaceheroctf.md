@@ -536,4 +536,4 @@ shctf{pr41s3_th3_r3m4k3_4nd_1ts_fr4m3s}
 
 ## Conclusion
 
-I think it was good are beginners to play. Some challenge was quite easy but was harder than I expected but it was quite fun 🙂
+I think it was good for beginners to play. Some challenge was quite easy but some was harder than I expected it also quite fun to play 🙂
