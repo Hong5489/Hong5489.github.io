@@ -109,4 +109,4 @@ When I try to brute force my gate, accidentally opens my neighbours gate 😂 **
 
 # Conclusion
 
-As Andre said, this type of remote control are widely found in Malaysia. It uses static codes, which is vulnerable to brute force and replay attack, so hope that in future our house gates can change it to rolling code to be more secure. Imagine anyone can open your house gate that is quite scary..
+As Andre said, this type of remote control are widely found in Malaysia. It uses static codes, which is vulnerable to brute force and replay attack, so hope in future all our house gates can change it to rolling code to be more secure. Imagine anyone can open your house gate that is quite scary.. so if you are using this kind of remote for your gate, better change it to more secure one
